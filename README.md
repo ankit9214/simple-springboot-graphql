@@ -47,7 +47,7 @@ Access the GraphQL API at the following endpoint:
     ```bash
     http://localhost:8080/graphql
    
-###GraphQL Schema
+### GraphQL Schema
 
 
 The GraphQL schema for this application is defined in schema.graphqls:
@@ -67,9 +67,9 @@ The GraphQL schema for this application is defined in schema.graphqls:
     createBook(title: String!, author: String!): Book
     }
 
-###Available GraphQL Queries and Mutations
+### Available GraphQL Queries and Mutations
 
-####Queries
+#### Queries
 1. Get All Books
     ```graphql
     query {
@@ -90,7 +90,7 @@ The GraphQL schema for this application is defined in schema.graphqls:
         }
     }
 
-###Mutations
+### Mutations
 1. Create a New Book
     ```graphql
     mutation($title: String!, $author: String!) {
@@ -102,14 +102,14 @@ The GraphQL schema for this application is defined in schema.graphqls:
     }
 
 
-###Project Configuration
+### Project Configuration
 
 The application.properties file configures the following:
 - spring.datasource.url: Sets up an H2 in-memory database for testing.
 - spring.h2.console.enabled: Enables access to the H2 console at /h2-console.
 - spring.graphql.path: Configures the GraphQL endpoint path to /graphql.
 
-###Technologies Used
+### Technologies Used
 - Java: Programming language 
 - Spring Boot: Framework for building Java applications 
 - Spring Data JPA: For data persistence 
